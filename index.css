@@ -1,0 +1,139 @@
+:dark-theme {
+    --colour1: #121619;
+    --colour2: #2D4739;
+    --colour3: #09814A;
+    --colour4: #BCB382;
+    --colour5: #E5C687;
+}
+
+:root {
+    --font-family1: 'Hanken Grotesk', sans-serif;
+    --h1size: 4.5rem;
+    --labelsize: 0.8rem;
+
+    --lightbg:#E5C687;
+    --darkbg: #121619;
+
+    --light-text: #121619;
+    --dark-text: #E5C687;
+
+    --bordercol: #2D4739;
+
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+}
+
+html, body, #container {
+    font-family: var(--font-family1);
+    background-color: var(--darkbg);
+    color: var(--dark-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.light {
+    background-color: var(--lightbg);
+    color: var(--light-text);
+}
+
+h1 {
+    text-align: center;
+    font-size: var(--h1size);
+    margin: 0 auto;
+}
+
+.formcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
+}
+
+.inputs {
+    width: 160px;
+    height: 28px;
+    margin-bottom: 2vh;
+    font-family: var(--font-family1);
+    font-weight: bold;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--dark-text);
+    color: var(--darkbg);
+}
+
+.inputs:focus{outline: none}
+
+#submitbtn{
+    width: 80px;
+    height: 20px;
+    margin-bottom: 2vh;
+    font-family: var(--font-family1);
+    font-weight: bold;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--dark-text);
+    color: var(--darkbg);
+    margin-left: 40px;
+}
+
+#themeswitch {
+    margin-bottom: auto;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#themebtn {
+    width: 5rem;
+    height: 1.5rem;
+    margin-bottom: 2vh;
+    font-family: var(--font-family1);
+    font-weight: bold;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--dark-text);
+    color: var(--darkbg);
+}
+#themebtn:hover,
+#submitbtn:hover{
+    border-color: var(--bordercol);
+    border-style: solid;
+}
+
+#container[theme='light'],
+#title[theme='light']
+{
+    background-color: var(--lightbg);
+    color: var(--light-text);
+}
+
+#submitbtn[theme="light"],
+#themebtn[theme='light']{
+    background-color: var(--light-text);
+    color: var(--lightbg);
+}
+
+#input1[theme='light'],
+#input2[theme='light']
+{
+    color: var(--lightbg);
+    background-color: var(--light-text);
+}
+
+
+#done, #incorrect{
+    display: none;
+
+    width: 10%;
+    height: 10%;
+    margin-bottom: auto;
+}

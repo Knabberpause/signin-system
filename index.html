@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign In</title>
+    <link rel='stylesheet' href="index.css">
+  </head>
+  <body>
+
+    <div id="container">
+
+      <h1 id="title" theme="dark">Welcome</h1>
+
+      <div class="formcontainer">
+
+        <form>
+          <input type="text"
+            name="uname"
+            id="input1"
+            class="inputs"
+            placeholder="username"
+            theme="dark"
+          />
+          <br>
+          <input type="text"
+            name="pwd"
+            id="input2"
+            class="inputs"
+            placeholder="password"
+            theme="dark"
+          />
+          <br>
+          <input type="submit"
+            id="submitbtn"
+            value="Submit"
+            theme="dark"  
+          />
+        </form>
+
+      </div>
+
+      <div id="themeswitch">
+        <button id="themebtn" onclick="themechange()"s theme="dark">Theme</button>
+      </div>
+
+      <img src="img/done.png" id="done">
+      <img src="img/incorrect.png" id="incorrect">
+
+    </div>
+
+    
+
+    <script src="theme.js"></script>
+    <script src="form.js"></script>
+  </body>
+</html>
